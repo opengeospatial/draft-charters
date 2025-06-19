@@ -1,1 +1,0 @@
-This folder is for the development of a draft charter for the Provenance Domain Working Group.
