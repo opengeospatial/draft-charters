@@ -30,7 +30,7 @@
 [cols = "^", frame = "none", grid = "none"]
 |===
 |*Copyright notice*
-|Copyright (C) <year> Open Geospatial Consortium
+|Copyright (C) 2025 Open Geospatial Consortium
 |To obtain additional rights of use, visit http://www.opengeospatial.org/legal/
 |===
 
@@ -263,3 +263,4 @@ Define scope of work and tasks in terms of interoperability approaches for OGC T
 ////
 Optional list of references.
 ////
+
