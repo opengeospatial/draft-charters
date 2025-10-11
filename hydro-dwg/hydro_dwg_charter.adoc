@@ -1,4 +1,4 @@
-:Title: OGC (add title text)
+:Title: OGC Hydrology Domain Working Group Charter
 :titletext: {Title}
 :doctype: book
 :encoding: utf-8
@@ -19,7 +19,7 @@
 |Approval Date:   <yyyy-mm-dd>
 |Internal reference number of this OGC(R) document:    YY-nnnrx
 |Category: OGC(R) Domain Working Group Charter
-|Authors:   <Name(s) of Editor or Editors>
+|Authors:   David Blodgett, Sylvain Grellet, Eric Boisvert
 |===
 
 [cols = "^", frame = "none"]
@@ -38,7 +38,7 @@
 
 == Introduction
 
-This Domain Working Group (DWG) charter defines the role for OGC activities within the <NAME of DOMAIN information community> domain and to provide an open forum for the discussion and presentation of interoperability requirements, use cases, pilots, and implementations of OGC Standards in this domain. This Charter is to be presented to the OGC’s Technical and Planning Committees for consideration.
+This Domain Working Group (DWG) charter defines the role for OGC activities within the hydrology domain and to provide an open forum for the discussion and presentation of interoperability requirements, use cases, pilots, and implementations of OGC Standards in this domain. This Charter is to be presented to the OGC’s Technical and Planning Committees for consideration.
 
 Domains are distinct Information Communities that defines a user domain where:
 
@@ -80,11 +80,41 @@ A DWG may determine that they wish to have public collaboration, such as in tele
 
 == Purpose of Working Group
 
-////
-Proposers will describe the purpose of the Domain Working Group and its overall mission in relation to OGC processes and activities.
-////
+This charter is an updated version of the original Hydrology Domain Working group (HydroDWG)  charter written in 2009.  More than 15 years after this foundational document, most of the motivations that led to the creation of this working group remain intact.  While the technological landscape has evolved, the need for timely and effective exchange of water information remains critical. With climate change, population growth, and economic demands placing mounting pressure on water resources, water scarcity is becoming increasingly evident.  The former Hydrology Domain Working Group  has brought together interested parties to develop and promote technology for greatly improving the way in which water information is described and shared.  A suite of standards were developed to address the exchange of timeseries, and describe sections, ratings and gauges. Models were proposed for surface and groundwater features.  The time has come for this working group to revisit past achievements and consider them in the light of new trends in web and emerging technologies such as spatial data on the Web, Artificial Intelligence, and Digital Twins.  
+
+
 
 == Problem statement
+
+Hydrology is the study of water, whether flowing above ground, frozen in ice or snow, retained by soil or moving through geological units.  Effective water management requires sound and reliable data. However water information is highly spatial, highly temporal and is created and managed across multiple organizations and levels of governments.  Water flows across borders and jurisdictions. Decisions of one impact many.
+ 
+Around the world, agencies collect and manage water information to support policy development, planning, research, and financial decisions. The heterogeneity of sampling methods, protocols, spatial and temporal distributions is a challenge for users to access and use.  In addition, new information sources in the form of in-situ and remote sensors are coming on line and telecommunications and computing technology has improved to the point that information about water resources can be analysed and predicted in real-time. This data is critical for many diverse groups, ranging from national agencies to private landholders to financial institutions. In addition, the increasing use of Artificial Intelligence, Digital Twins to support policies and decision making requires vast amounts of data to be ingested rapidly. A veritable flood of water information is now available. 
+ 
+However, there is no broadly accepted comprehensive suite of structured definitions or interoperable formats to package information. The problem is two-fold:
+
+  * Firstly, a consistent set of definitions that reflect core hydrologic features (e.g. watersheds, estuaries, river channels, aquifers, different types of measurement points), common types of hydrologic sampling features (e.g. transects, vertical profiles), typical ways of organizing hydrologic data (e.g. time series, remote sensing), and typical usage scenarios for hydrologic data are needed. 
+  * Secondly,general and consistent encoding patterns to ensure hydrologic data can be moved across systems and disciplines.
+
+Between 2009 and 2024, the Hydrology Domain Working Group worked to advance conceptual and technical solutions for general water resources data interoperability through a multi-part WaterML2 suite of standards. Drawing from the OGC abstract specification conceptual baselines for features, observations, spatial features, and coverages and defining hydrology-specific conceptual models for river monitoring, surface water, and groundwater. Some of these efforts resulted in implementation specifications providing XML schema as transfer formats. The WaterML2 suite of standards is generally consistent from a conceptual perspective but has not been implemented as a consistent  XML or JSON schemas or other physical format specifications. 
+ 
+Efforts toward OGC-APIs have advanced multi-disciplinary interoperability and further consideration is needed toward mechanisms to include various datasets and services from related disciplines (e.g., atmospheric science and meteorology, and ocean observation) which are essential for water resources monitoring and analysis. Hence, a consistent method is needed for modeling and encoding water resources information based on the robust technical base provided by OGC-API standards, W3C Spatial Data on the Web best practices, and other related interoperability/FAIR principles.
+
+It is important to note that WMO expects harmonised and tested data models for all types of water resources world-wide. To achieve this, of a suite of approaches that pragmatically address and provide guidelines for water resources data and metadata holistically must be established.
+
+Since the publication of the current version of Water 2.0 suite, models upon which they depend continue evolving, and a shift from XML to JSON has been operated.  A number of adopted and emerging OGC, W3C and ISO standards now needs to be address by the working group.
+
+  * GEOJSON – encoding standard for geospatial feature data
+  * CoverageJSON – encoding standard for geospatial coverage data
+  * OGC-API
+  * OMS – Observations Measurements and Samples
+  * SensorThings – interface for hosting and accessing observation data
+  * W3C SOSA/SSN
+  * W3C CSV for the Web (CSVW)
+I
+n order to apply these OGC and ISO standards to the water resources domain, they need to be profiled appropriately. It is expected that a significant part of the standards work undertaken through the Hydrology DWG will focus on this task. Existing WaterML2 standards using XML schema need to be updated to use these specifications and/or compatible technologies (JSON-Schema and JSON-LD Context in place of XML-Schema and OWL Ontology). 
+ 
+The advent of W3C Spatial Data on the Web Best Practices and efforts toward increasingly ubiquitous semantic web technologies such as "Science on schema.org" and the two OGC "Environmental Linked Features Interoperability Experiments" are key advances to build on. Specification of standards and best practices that allow Hydrology domain concepts to be encoded in linked data for consumption by Web crawlers and use in knowledge graph applications is a high value opportunity.
+
 
 ////
 The problem(s) associated with interoperability and geodata processing as they relate to the DWG needs to be defined.  The WG DOMAIN information community needs to be defined, (users, data, service, and technology providers).  Problems might be framed as barriers that need to be overcome.  It is these barriers that will ultimately suggest the nature of the OGC’s role and level of involvement and lead to a set of processes, activities, and organizational approaches whereby the DOMAIN community can, through OGC, come together to develop a common means for digitally representing and sharing domain related geospatial data, and for processing interoperability within mainstream information system environments.
@@ -98,23 +128,36 @@ General Scope of Domain Working Group.
 
 === Charter members
 
-The initial membership of the <DOMAIN WG> will consist of the following members and individuals with extensive education and experience in <DOMAIN> issues, namely:
+The charter of this Working Group is to address conceptual, technical and institutional challenges posed by management and exchange of hydrological information, to interface with other OGC working groups which address technical areas that are affected by the hydrology problem, and to engage in outreach and communication with the hydrological information community.
 
-<NAME and AFFILIATION>
+==== Chairs
+
+This working group is hosted by the OGC and co-chaired by up to three representatives elected by members of the HydroDWG. The working group will coordinate efforts with other earth science DWGs (Meteorology, Oceans, etc) through the Earth System Science DWG.
+
+==== Members
+
+The Hydrology DWG will be a joint working group between the OGC and WMO. The group will be co-chaired by OGC members elected by the DWG members and up to two representatives nominated by WMO. The same person can simultaneously represent OGC and WMO.  
+Membership of the group will be open to any OGC and WMO members at any time, in accordance with the OGC Policies and Procedures. WMO may also nominate non-OGC members to participate in the group. This will provide an open forum for work on water data interoperability, and a route to publication through OGC's standards ladder (Discussion paper / Best Practice / Standard/ ISO Standard) as well as a route to adoption by the WMO.
+
 
 === Key activities
 
-////
-The DWG will need to define key activities it intends on undertaking.  Examples of such activity might be framed around the following considerations.
+The Hydrology DWG will maintain a forum for discussion and documentation of interoperability requirements for the hydrological information community and recommend actions. It will liaise with other OGC working groups and external organizations to ensure that the needs of the hydrological information community are addressed and support other working groups in addressing hydrological information requirements.
 
-1.	Determine OGC goals and organizational issues that impact DOMAIN data, technology and markets.
+The Hydrology DWG will coordinate and steer the work of its Standards Working Groups (SWGs) to harmonize and modernize the WaterML2 series of standards developed since 2009.   The DWG will also oversee the publication of engineering reports and new additions to the WaterML2 suite. 
 
-2.	Define the business issues and approaches for OGC to incorporate so that DOMAIN considerations are brought into proper focus with OGC Standards initiatives.  The approach includes defining business objectives, tasks and schedule.
+The DWG will also engage in outreach and communication with the hydrological information community through the development of training material and  documents addressing specific technical problems in the hydrology domain.  The DWG will grow the community by engaging members the hydrological community.
 
-3.	Define approach for engaging with the DOMAIN community to enlist their support.
-////
 
 === Business case
+
+Collaboration requires agreements and to move data across, standards and technologies must be created. The former Hydrology Domain Working Group (HydroDWG) has brought together interested parties to develop and promote technology for greatly improving the way in which water information is described and shared.  A suite of standards were developed to address the exchange of timeseries, and describe sections, ratings and gauges. Models were proposed for surface and groundwater features.  The time has come for this working group to revisit past achievements and consider them in the light of new trends in web and emerging technologies such as spatial data on the Web, Artificial Intelligence, and Digital Twins.  
+
+Growing water crises of various natures around the world have challenged our ability to describe water resources (and hydrological hazards) and transfer information adequately. Increasing anthropogenic pressure, climate change and numerous other challenges are putting greater demands on what is already a scarce resource. Advances in data integration and modelling (machine learning, digital twins, dataspaces, etc.) dramatically increase the value of organized and coherent water data and confirms the relevance of HydroDWG.
+ 
+A key for water management is the ability to measure  and share information about it. Groups around the world develop tools for water information. For many reasons, this work has concentrated on specific problems with little concern for broader applicability. In recent times, the need to think more broadly has become important.
+
+
 
 ////
 Define the business case related to interoperability that confront the DOMAIN community. Examples of issues that might be discussed include:
@@ -168,7 +211,40 @@ The DOMAIN WG will concern itself with technology and technology policy issues, 
 2.	Define the role of the DOMAIN WG to present, refine and focus interoperability-related issues to the Technical Committee.
 ////
 
-=== Activities planned for <DOMAIN WG>
+=== Activities planned for HydroDWG
+
+
+In the course of fulfilling its Charter, the Hydrology DWG will envision a series of short-term and medium-terms activities. Short-term activities can begin immediately, medium-term activities require revision of standards and domain models.
+
+In the short-term, the HydroDWG will:
+
+. Support its SWGs to publish modern encodings, specifically JSON/JSON-LD encoding but others might be considered.
+. Support the SWGs to 
+.. update WaterML2.0 Part1: Timeseries dependencies from O&M v.2 to Observations, Measurements and Samples (OMS),
+.. update the SensorThings API to version 2.0 taking into account the Water Quality IE Recommendations and 
+.. the publication of a WaterML2.0 Part 5: WaterQuality document  (standard VS best practice still to be defined) building on the WaterQuality IE Engineering Report.
+. Develop communication materials: Describe and link documentation, training materials and other documents focussing on the technical problem area of hydrological data management and exchange.
+.. Provide a public communication hub: Manage a Github-based project for discussions, issue tracking and artifacts management (schemas, documentation, examples, code). 
+.. Grow the community: engage members of the geospatial data community (including relevant OGC working groups) and the hydrological community (OGC members and non members). Foster and mediate communication within this target audience.
+.. Establish an activity road map: Conceive, design, coordinate a road map for demonstrations, pilots, interoperability experiments in its perimeter of activity.
+. As appropriate, serve as a forum for the development of specification profiles and application schemas for hydrological purposes.
+. Engage the interest of sponsors for these activities.
+
+In the medium term
+
+. The Hydro DWG will steer its SWGs to improve uptake. Several models require simplification, better tooling and better documentation and training.
+. Develop a “lite” encoding conformant to GML Level 0 representing key features of relevant standards, as proposed by GeoSciML (OGC 16-008). 
+. Simplify and create  a logical model for  HY_Feature.
+. Align current standards to new versions of dependencies (such as O&M v.2 to Observations, Measurements and Samples).
+. Help support development of tools of the related standards
+. Consider extending the WaterML2.0 line to other water domains (ex : rain/waste water networks)
+. Develop hydrological ontologies based on existing OGC and W3C standards and existing ontologies to enhance interoperability and linked data exchange.
+. Expand the Water Quality Work  to biodiversity and earth observations and explore joint vocabularies
+. Explore development of  joint vocabularies for HY_Features and GWML 2
+. Launch a follow-up Water Quality Interoperability Experiment (WQ IE  n°2) to consider the excluded Use Cases.
+
+
+
 
 ////
 Define scope of work and tasks in terms of interoperability approaches for OGC Technical Committee consideration, define how this is to complement existing efforts and results produced by the OpenGIS Project, resulting in a specification for all forms of geospatial data and geoprocessing services. The following points should be discussed under scope of work and tasks.
