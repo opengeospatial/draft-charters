@@ -174,17 +174,17 @@ Define what measures OGC should consider for developing guidelines that address 
 The primary goals for OGC in the area of hydro information are to foster a FAIR/interoperability water community and make the HydroDWG the forum for this community.
 
 Therefore this community
-  * shares common issues and explore solutions via open standardized approaches and tools,
-  * develops technical and semantics standards based on the OGC Baseline (extending it as required) in a coordinated manner,
-  * transfers solutions to its members through tools and training,
-  * helps members to leverage OGC standard development, testing and demonstration framework to coordinate activities at regional / national / continental / international and organizational levels to achieve FAIR objectives,
-  * brings stakeholders from
-  * Public sector monitoring, 
-  * NGO
-  * Research and academic organizations, 
-  * Private sector
-  * Software vendors and open source community
 
+* shares common issues and explore solutions via open standardized approaches and tools,
+* develops technical and semantics standards based on the OGC Baseline (extending it as required) in a coordinated manner,
+* transfers solutions to its members through tools and training,
+* helps members to leverage OGC standard development, testing and demonstration framework to coordinate activities at regional / national / continental / international and organizational levels to achieve FAIR objectives,
+* brings stakeholders from
+* Public sector monitoring, 
+* NGO
+* Research and academic organizations, 
+* Private sector
+* Software vendors and open source community
 
 ////
 The <DOMAIN WG> will need to establish a set of business goals that frame the basis for determining the nature and type of recommendations made to OGC, framed around the above mentioned business issues.  Examples of the types of discussion for framing goals include
@@ -276,5 +276,6 @@ Define scope of work and tasks in terms of interoperability approaches for OGC T
 ////
 Optional list of references.
 ////
+
 
 
