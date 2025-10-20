@@ -59,19 +59,12 @@ Operation of OGC Domain Working Group follows the policies and procedures of the
 Functions of a Domain Working Group are as follows.
 
 * Provide a forum for discussion and documentation of interoperability requirements for a given information or user community.
-
 * Provide a forum to discuss and recommend document actions related to Interoperability Program Reports.
-
 * Develop Change Requests Proposals (CRPs) for existing OGC Standards.
-
 * Develop engineering reports with the intent seeking approval by the TC for release of these documents as OGC White Papers, Discussion Papers or Best Practices Papers.
-
 * Informational presentations and discussions about the market use of adopted OGC Standards.
-
 * Have a formal approved charter that defines the DWGs Scope of Work and estimated timeline for completion of the work.
-
 * Have all-member voting policies (unless otherwise stated).
-
 * Have missions and goals defined by the TC.
 
 A DWG [underline]#Does Not# work on Standards submissions, candidate Standards, or revisions to existing OGC Standards. However, a DWG can develop change requests as document interoperability requirements that can then be submitted as work items to a Standards Working Group (SWG).
@@ -161,19 +154,12 @@ A key for water management is the ability to measure and share information about
 Define the business case related to interoperability that confront the DOMAIN community. Examples of issues that might be discussed include:
 
 * GeoData and support data taxonomy and characterization
-
 * Data sharing, interface standards and approaches
-
 * Metadata standards
-
 * DOMAIN analysis models and processing standards
-
 * Data quality and accuracy
-
 * Data protection and truth in labeling
-
 * Data acquisition coordination
-
 * User education
 
 Define the business case that requires resolution because businesses that are engaged in DOMAIN related activities view them as an obstacle for growth.
@@ -275,11 +261,12 @@ Define scope of work and tasks in terms of interoperability approaches for OGC T
 
 
    * GeoJSON Format Specification, RFC 7946, IETF, URL https://datatracker.ietf.org/doc/html/rfc7946.
-   * WaterML 2.0 Part 1 - Time Series (1.0), OGC Document 10-004r3, URL http://portal.opengeospatial.org/files/?artifact_id=35672.
-   * WaterML 2.0 Part 2 - Hydrologic Features (1.0), OGC Document 10-005r3, URL http://portal.opengeospatial.org/files/?artifact_id=35673.
-   * WaterML 2.0 Part 3 - Groundwater (1.0), OGC Document 10-006r3, URL http://portal.opengeospatial.org/files/?artifact_id=35674.
-   * WaterML 2.0 Part 4 - Ratings and Sections (1.0), OGC Document 10-007r3, URL http://portal.opengeospatial.org/files/?artifact_id=35675.
-   * CoverageJSON, OGC Community Standard, URL https://www.ogc.org/standards/covjson.
+   * WaterML 2.0 Part 0 - OGC WaterML 2.0 suite, URL https://www.ogc.org/standards/waterml/.
+   * WaterML 2.0 Part 1 - Time Series (1.0), OGC Document 10-004r3, URL https://portal.ogc.org/files/?artifact_id=57222.
+   * WaterML 2.0 Part 2 - Ratings, Gaugings and Sections (1.0), OGC Document 10-007r3, URL https://docs.ogc.org/is/15-018r2/15-018r2.html.
+   * WaterML 2.0 Part 3 - Hydrologic Features (1.0), OGC Document 10-005r3, URL https://docs.ogc.org/is/14-111r6/14-111r6.html.
+   * WaterML 2.0 Part 4 - Groundwater (1.0), OGC Document 10-006r3, URLhttps://docs.ogc.org/is/16-032r2/16-032r2.html.
+   * CoverageJSON, OGC Community Standard, URL https://covjson.org/.
    * OGC API Standards, OGC, URL https://ogcapi.ogc.org/.
    * Observations Measurements and Samples, OGC Abstract Specification Topic 20, URL https://docs.ogc.org/as/20-082r4/20-082r4.html
    * OGC SensorThings API, URL https://www.ogc.org/standards/sensorthings
@@ -289,4 +276,5 @@ Define scope of work and tasks in terms of interoperability approaches for OGC T
 ////
 Optional list of references.
 ////
+
 
