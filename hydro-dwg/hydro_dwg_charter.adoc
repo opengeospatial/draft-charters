@@ -274,18 +274,19 @@ Define scope of work and tasks in terms of interoperability approaches for OGC T
 == References
 
 
-GeoJSON Format Specification, RFC 7946, IETF, URL https://datatracker.ietf.org/doc/html/rfc7946.
-WaterML 2.0 Part 1 - Time Series (1.0), OGC Document 10-004r3, URL http://portal.opengeospatial.org/files/?artifact_id=35672.
-WaterML 2.0 Part 2 - Hydrologic Features (1.0), OGC Document 10-005r3, URL http://portal.opengeospatial.org/files/?artifact_id=35673.
-WaterML 2.0 Part 3 - Groundwater (1.0), OGC Document 10-006r3, URL http://portal.opengeospatial.org/files/?artifact_id=35674.
-WaterML 2.0 Part 4 - Ratings and Sections (1.0), OGC Document 10-007r3, URL http://portal.opengeospatial.org/files/?artifact_id=35675.
-CoverageJSON, OGC Community Standard, URL https://www.ogc.org/standards/covjson.
-OGC API Standards, OGC, URL https://ogcapi.ogc.org/.
-Observations Measurements and Samples, OGC Abstract Specification Topic 20, URL https://docs.ogc.org/as/20-082r4/20-082r4.html
-OGC SensorThings API, URL https://www.ogc.org/standards/sensorthings
-Semantic Sensor Network Ontology, W3C Recommendation, URL https://www.w3.org/TR/vocab-ssn/
-W3C CSV for the Web (CSVW), W3C Recommendation, URL https://www.w3.org/TR/tabular-data-model/
+   * GeoJSON Format Specification, RFC 7946, IETF, URL https://datatracker.ietf.org/doc/html/rfc7946.
+   * WaterML 2.0 Part 1 - Time Series (1.0), OGC Document 10-004r3, URL http://portal.opengeospatial.org/files/?artifact_id=35672.
+   * WaterML 2.0 Part 2 - Hydrologic Features (1.0), OGC Document 10-005r3, URL http://portal.opengeospatial.org/files/?artifact_id=35673.
+   * WaterML 2.0 Part 3 - Groundwater (1.0), OGC Document 10-006r3, URL http://portal.opengeospatial.org/files/?artifact_id=35674.
+   * WaterML 2.0 Part 4 - Ratings and Sections (1.0), OGC Document 10-007r3, URL http://portal.opengeospatial.org/files/?artifact_id=35675.
+   * CoverageJSON, OGC Community Standard, URL https://www.ogc.org/standards/covjson.
+   * OGC API Standards, OGC, URL https://ogcapi.ogc.org/.
+   * Observations Measurements and Samples, OGC Abstract Specification Topic 20, URL https://docs.ogc.org/as/20-082r4/20-082r4.html
+   * OGC SensorThings API, URL https://www.ogc.org/standards/sensorthings
+   * Semantic Sensor Network Ontology, W3C Recommendation, URL https://www.w3.org/TR/vocab-ssn/
+   * W3C CSV for the Web (CSVW), W3C Recommendation, URL https://www.w3.org/TR/tabular-data-model/
 
 ////
 Optional list of references.
 ////
+
