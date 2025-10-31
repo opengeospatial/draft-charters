@@ -80,7 +80,7 @@ Proposers will describe the purpose of the Standards Working Group and its overa
 ////
 The HEIF format is a multipart format that is defined by Moving Picture Experts Group (MPEG). In addition to camera footage,  adding the georeference information, HEIF can be used to store geospatial imagery. To do that, adding the georeference information is necessary like other formats has done in the past (e.g. GeoTIFF, JPEG2000, etc). Extending this to other metadata should be possible.
 
-A future GeoHEIF (Geographic High Efficiency Image Format) specification aims to define HEIF properties to include the georeference information in one or more image items. In addition, other HEIF properties can be added to define the semantics of dimensions and cell properties that together enable converting HEIF into a datacube container. The GeoHEIF approach was demonstrated and tested in Testbed 20.
+A future GeoHEIF (Geographic High Efficiency Image Format) specification aims to define HEIF properties to include the georeference information in one or more image items. In addition, other HEIF properties can be added to define the semantics of dimensions and cell properties that together enable converting HEIF into a datacube container. The GeoHEIF approach was demonstrated and tested in Testbed 20 and demonstrations will continue with other approaches in Testbed 21.
 
 The initial purpose of this SWG will be to review the work done in the Testbed 20, in particular the OGC 24-038 OGC Testbed 20 GEOINT Imagery Media for ISR (GIMI) Specification Report, as well as the work that will be done in Testbed 21 on the GIMI extensions for HEIF, bring them to the attention to the OGC Technical Committee at large and create drafts of a OGC standards that can be incorporated as part of the OGC practices.
 
@@ -116,7 +116,7 @@ In all cases, the SWG Charter shall provide a basic timeline plan for their acti
 ////
 
 The High Efficiency Image Format (HEIF) format supports the storage and containment of uncompressed and compressed forms of imagery, with supporting metadata. The GEOINT Imagery Media for ISR (GIMI) establishes a number of extensions to the HEIF format that include the ContentID, TAI Timestamps and Application metadata.
-This SWG aims to standardize the GeoHEIF (Geographic High Efficiency Image Format) format based on HEIF, ISO base media file format (ISOBMFF) and the GIMI standards, to be used to represent orthorectified, georectified, and rectifiable imagery. In that sense, this SWG will concentrate efforts on producing an standard for geospatial metadata that can be encoded in HEIF format and other similar image formats such as GeoTIFF or JPEG2000.
+This SWG aims to standardize the GeoHEIF (Geographic High Efficiency Image Format) format based on HEIF, ISO base media file format (ISOBMFF) and the GIMI standards, to be used to represent orthorectified, georectified, and rectifiable imagery. In that sense, this SWG will concentrate efforts on producing an standard for geospatial metadata that can be encoded in HEIF format and other similar image formats such as GeoTIFF or JPEG2000 (the later can results in other standards done by other SWGs).
 Images can be geospatially enabled by providing coordinate reference system (CRS) metadata defined in Compact URIs (CURIEs), Well-Known Text version 2 (WKT2), or other OGC approved encodings. 
 Using a _raster space to model space transformation matrix_, the image becomes georectified. Alternatively, a set of tie-points can be used to make the image georeferenceable.
 Going beyond imagery, and considering the stacked gridded variables, by adding the definition of the semantics of dimensions and cell properties, the standard supports geospatial datacubes. Both dimensions and cell properties can be continuous, ordinal or categorical.
@@ -174,8 +174,8 @@ The work of this SWG will consider the OGC 24-038: GEOINT Imagery Media for ISR 
 There are other documents result from the work of Testbed 20 about the same topic that can be useful for this SWG:
 
 * OGC 24.039r1: OGC Testbed 20: GIMI Lessons Learned and Best Practices Report
-* OGC 24-040r1:  OGC Testbed 20 Coverage Format Selection Report
-* OGC 24-042r1:  OGC Testbed-20 GIMI Open Source Report
+* OGC 24-040r1: OGC Testbed 20 Coverage Format Selection Report
+* OGC 24-042r1: OGC Testbed-20 GIMI Open Source Report
  
 
 === Is this a persistent SWG
@@ -288,9 +288,10 @@ The work of the SWG will be carried out primarily by discussions in the OGC Agor
 The following people support this proposal and are committed to the Charter and projected meeting schedule. These members are known as SWG Founding or Charter members. The charter members agree to the SoW and IPR terms as defined in this charter. The charter members have voting rights beginning the day the SWG is officially formed. Charter Members are shown on the public SWG page. Extend the table as necessary.
 
 |===
-| Name       | Organization
-| Joan Maso  | UAB-CREAF
-| Brad Hards | Silvereye Technology
+| Name          | Organization
+| Joan Maso     | UAB-CREAF
+| Brad Hards    | Silvereye Technology
+| Jim Autonisse | WiSC Enterprises, LLC
 |===
 
 === Conveners
@@ -307,5 +308,5 @@ Optional list of references.
 ////
 * OGC 24-038: GEOINT Imagery Media for ISR (GIMI) Specification Report
 * OGC 24.039r1: OGC Testbed 20: GIMI Lessons Learned and Best Practices Report
-* OGC 24-040r1:  OGC Testbed 20 Coverage Format Selection Report
-* OGC 24-042r1:  OGC Testbed-20 GIMI Open Source Report
+* OGC 24-040r1: OGC Testbed 20 Coverage Format Selection Report
+* OGC 24-042r1: OGC Testbed-20 GIMI Open Source Report
