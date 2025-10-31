@@ -84,7 +84,7 @@ A future GeoHEIF (Geographic High Efficiency Image Format) specification aims to
 
 The initial purpose of this SWG will be to review the work done in the Testbed 20, in particular the OGC 24-038 OGC Testbed 20 GEOINT Imagery Media for ISR (GIMI) Specification Report, as well as the work that will be done in Testbed 21 on the GIMI extensions for HEIF, bring them to the attention to the OGC Technical Committee at large and create drafts of a OGC standards that can be incorporated as part of the OGC practices.
 
-The work should work with other SWG groups (such GeoTIFF and GMLJP2) to find an approach that can be adopted by as many formats as possible  multipart. So, the work to be done is similar to the one previously done by the GeoTIFF SWG but taking into account a more open approach based on a mixture of binary sections with text sections (e.g. fragment based on JSON, turtle or XML encodins), something that was not considered at the beginning of the GeoTIFF work and was accepted by the GMLJP2 SWG.
+The work should work with other SWG groups (such GeoTIFF and GMLJP2) to find an approach that can be adopted by as many formats as possible  multipart. So, the work to be done is similar to the one previously done by the GeoTIFF SWG but taking into account a more open approach based on a mixture of binary sections with text sections (e.g. fragment based on JSON, turtle or XML encodings), something that was not considered at the beginning of the GeoTIFF work and was accepted by the GMLJP2 SWG.
 
 == Business value proposition
 
@@ -116,7 +116,7 @@ In all cases, the SWG Charter shall provide a basic timeline plan for their acti
 ////
 
 The High Efficiency Image Format (HEIF) format supports the storage and containment of uncompressed and compressed forms of imagery, with supporting metadata. The GEOINT Imagery Media for ISR (GIMI) establishes a number of extensions to the HEIF format that include the ContentID, TAI Timestamps and Application metadata.
-This SWG aims to standardize the GeoHEIF (Geographic High Efficiency Image Format) format based on HEIF, ISO base media file format (ISOBMFF) and the GIMI standards, to be used to represent orthorectified, georectified, and rectifiable imagery. In that sense, this SWG will concentrate efforts on producing an standard for geospatial metadata that can be encoded in HEIF format and other similar image formats such as GeoTIFF of JPEG2000 (la later can results in other standards).
+This SWG aims to standardize the GeoHEIF (Geographic High Efficiency Image Format) format based on HEIF, ISO base media file format (ISOBMFF) and the GIMI standards, to be used to represent orthorectified, georectified, and rectifiable imagery. In that sense, this SWG will concentrate efforts on producing an standard for geospatial metadata that can be encoded in HEIF format and other similar image formats such as GeoTIFF or JPEG2000.
 Images can be geospatially enabled by providing coordinate reference system (CRS) metadata defined in Compact URIs (CURIEs), Well-Known Text version 2 (WKT2), or other OGC approved encodings. 
 Using a _raster space to model space transformation matrix_, the image becomes georectified. Alternatively, a set of tie-points can be used to make the image georeferenceable.
 Going beyond imagery, and considering the stacked gridded variables, by adding the definition of the semantics of dimensions and cell properties, the standard supports geospatial datacubes. Both dimensions and cell properties can be continuous, ordinal or categorical.
@@ -147,7 +147,7 @@ If processing change requests and performing a revision to an existing Standard,
 If processing a draft submission of a specification developed outside the OGC process, a clear statement of the relationship to the existing Standards baseline including statements related to overlap (if any) with existing OGC Standards functionality, harmonization issues, and so forth. This information is provided to allow a focus of the discussion on criteria for considering any new solution that may be incompatible with older ones, overlaps existing functionality in the current baseline, and criteria for either deprecating older solutions, or simultaneously endorsing more than one option.
 ////
 
-The spirit and approach of GeoHEIF is very similar to other efforts done with GeoTIFF and GMLJP2. They specify a way to include geospatial aspects in TIFF and JPEG2000 respectively. They will be inspirational for this SWG.  The result of the work of this SWG will take into account other gridded format that can benefit from the same strategy such as GeoTIFF, GMLJP2, NETCDF, HDF, etc.
+The spirit and approach of GeoHEIF is very similar to other efforts done with GeoTIFF and GMLJP2. They specify a way to include geospatial aspects in TIFF and JPEG2000 respectively. They will be inspirational for this SWG.  The result of the work of this SWG will take into account other gridded formats that can benefit from the same strategy such as GeoTIFF, GMLJP2, NETCDF, HDF, etc.
 
 The work of this SWG is related to standards specifying services and APIs that can generate, expose or exchange geospatial coverages (such as OGC API coverages or OGC API processes) and it is foreseen that these services and API can serve GeoHEIF in the future. However, the way this is done in practice is out of scope of this SWG.
 
@@ -159,7 +159,7 @@ Part of the work of this SWG is related to the geodatacube SWG. The work of prov
 A short description of any activities that will be out of scope for the SWG. For example, a SWG may limit consideration of CRPs after a specified date or milestone.
 ////
 
-Despite the capabilities of HEIF to store video, the scope of this SWG includes still and sequence imagery but does not consider motion imagery. The SWG will not define any API to retrieve GeoHEIF and will relay on other groups to do so, such as OGC API coverage. Eventually, this SWG can collaborate with the OGC API coverage to define an extension to better support GeoHEIF in OGC API coverage after finalizing the definition of the GeoHEIF format.
+Despite the capabilities of HEIF to store video, the scope of this SWG includes still and sequence imagery but does not consider motion imagery. The SWG will not define any API to retrieve GeoHEIF and will rely on other groups to do so, such as OGC API coverage. Eventually, this SWG can collaborate with the OGC API coverage to define an extension to better support GeoHEIF in OGC API coverage after finalizing the definition of the GeoHEIF format.
 
 The work of this SWG should build on and leverages existing HEIF, ISOBMFF AND GIMI functionality including advanced codecs, image overviews, image tiling, and metadata. Those capabilities are not separately defined by this SWG, but can be used along with the geographical capabilities defined in this SWG.
 
@@ -218,7 +218,8 @@ Describe each additional Standard to be developed by the SWG as an additional ta
 
 This SWG will collaborate with OGC API coverages SWG to ensure that GeoHEIF can be served by the web API
 
-This SWG will collaborate with GeoTIFF SWG, GMLJP2 SWG and other SWGs dealing with gridded formats to ensure that the common way of adding metadata can be accepted by those relevant formats.
+This SWG will collaborate with GeoTIFF SWG, GMLJP2 SWG and other SWGs dealing with gridded formats to ensure that the common way of adding metadata can be accepted by those relevant formats. This may include
+generation of a logical model for georeferencing, and specific encodings of that logical model that are consistent with the underlying raster or coverage format.
 
 This SWG will consider generating educational materials and guidelines on GeoHEIF and to create a GeoHEIF website to include them as well as listing applications and implementations of GeoHEIF.
 
@@ -236,7 +237,7 @@ Description of the target participants in this SWG. For example, if the SWG were
 This is not meant as a limiting statement but instead is intended to provide guidance to interested potential participants as to whether they wish to participate in this SWG.
 ////
 
-We expect participation of people interested in gridded coverage formats, such as remote sensing experts as well as participants interested in encoding geospatial datacubes in files, for example modelers of environmental variables (a.k.a observed properties) such as weather, climate and oceans experts. We also expect that GIMI community to collaborate in this SWG.
+We expect participation of people interested in gridded coverage formats, such as remote sensing experts as well as participants interested in encoding geospatial datacubes in files, for example modelers of environmental variables (a.k.a observed properties) such as weather, climate and oceans experts. We also expect that GIMI community will collaborate in this SWG.
 
 == Domain Working Group endorsement
 
@@ -254,7 +255,7 @@ The GeoTIFF SWG is the initial group where the creation of this SWG is discussed
 Describe the work environment of the SWG, including the use of GitHub or GitLab.
 ////
 
-The OGC supporting infrastructure is in the process of evolution to new technologies and it is difficult to predict the working environment at this point. We expect to use GitHub to develop the standard in asciidoc format (and metanorma) as well as the GitHub issue tracker to manage content and change requests. The group will internally discuss if making the GitHub repository public is acceptable by all parts.
+The OGC supporting infrastructure is in the process of evolution to new technologies and it is difficult to predict the working environment at this point. We expect to use GitHub to develop the standard in asciidoc format (and metanorma) as well as the GitHub issue tracker to manage content and change requests. The group will internally discuss if making the GitHub repository public is acceptable by all parties.
 
 === Similar or applicable standards work (OGC and elsewhere)
 
@@ -287,8 +288,9 @@ The work of the SWG will be carried out primarily by discussions in the OGC Agor
 The following people support this proposal and are committed to the Charter and projected meeting schedule. These members are known as SWG Founding or Charter members. The charter members agree to the SoW and IPR terms as defined in this charter. The charter members have voting rights beginning the day the SWG is officially formed. Charter Members are shown on the public SWG page. Extend the table as necessary.
 
 |===
-|Name |Organization
-| Joan Maso | UAB-CREAF
+| Name       | Organization
+| Joan Maso  | UAB-CREAF
+| Brad Hards | Silvereye Technology
 |===
 
 === Conveners
