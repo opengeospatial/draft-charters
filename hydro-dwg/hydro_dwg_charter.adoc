@@ -121,11 +121,11 @@ The problem(s) associated with interoperability and geodata processing as they r
 
 The charter of this Working Group is to address conceptual, technical and institutional challenges posed by management and exchange of hydrological information, to interface with other OGC working groups which address technical areas that are affected by the hydrology problem, and to engage in outreach and communication with the hydrological information community. 
 
-==== Chairs
+=== Chairs
 
 This working group is hosted by the OGC and co-chaired by up to three representatives elected by members of the HydroDWG. The working group will coordinate efforts with other earth science DWGs (Meteorology, Oceans, etc) through the Earth System Science DWG.
 
-==== Members
+=== Members
 
 The Hydrology DWG will be a joint working group between the OGC and WMO. The group will be co-chaired by OGC members elected by the DWG members and up to two representatives nominated by WMO. The same person can simultaneously represent OGC and WMO.  
 Membership of the group will be open to any OGC and WMO members at any time, in accordance with the OGC Policies and Procedures. WMO may also nominate non-OGC members to participate in the group. This will provide an open forum for work on water data interoperability, and a route to publication through OGC's standards ladder (Discussion paper / Best Practice / Standard/ ISO Standard) as well as a route to adoption by the WMO.
@@ -276,6 +276,7 @@ Define scope of work and tasks in terms of interoperability approaches for OGC T
 ////
 Optional list of references.
 ////
+
 
 
 
